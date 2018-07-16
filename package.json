@@ -1,18 +1,16 @@
 {
   "name": "blobber-x",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts-ts": "2.16.0",
-    "rxjs": "^6.0.0-beta.4",
-    "socket.io": "^2.1.1",
-    "socket.io-client": "^2.1.1"
-  },
+  "version": "0.0.1",
+  "authors": [
+    "github.com/austin-garrard",
+    "github.com/danwbyrne"
+  ],
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
+    "watch": "nodemon -w src/client -w src/shared/ --exec \"yarn start\"",
+    "dev": "concurrently -n --kill-others-on-fail \"yarn watch\"",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
@@ -22,5 +20,17 @@
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
     "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "concurrently": "^3.6.0",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts-ts": "2.16.0",
+    "rxjs": "^6.0.0-beta.4",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "webpack": "^4.16.1"
   }
 }
