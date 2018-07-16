@@ -1,5 +1,5 @@
 import { filter, map, withLatestFrom } from 'rxjs/operators'
-import { Observable } from '../../node_modules/rxjs';
+import { Observable } from 'rxjs';
 
 export const unless = (locked$: Observable<any>) => (source$:Observable<any>) => source$.pipe(
   withLatestFrom(locked$),
