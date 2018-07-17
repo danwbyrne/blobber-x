@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import { RenderObject } from './assets/RenderObject';
+import { RenderObject } from './components/RenderObject';
 
 class App extends React.Component {
   private readonly renderObjects: ReadonlyArray<any> = [];
