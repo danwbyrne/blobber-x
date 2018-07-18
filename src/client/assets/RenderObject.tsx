@@ -15,8 +15,8 @@ export interface RenderObjectProps {
 }
 
 export abstract class RenderObject extends React.Component {
-  constructor(props: RenderObjectProps) {
-    super({ ...props, renderCall: undefined });
-    this.render = props.renderCall;
+  constructor(props: any, renderCall: () => JSX.Element) {
+    super(props);
+    this.render = renderCall;
   }
 }
