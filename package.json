@@ -1,0 +1,9 @@
+{
+  "name": "blobber-x",
+  "version": "0.0.1",
+  "description": "B L O B B E R X",
+  "main": "src/index.ts",
+  "repository": "github.com/danwbyrne/blobber-x.git",
+  "author": "github.com/danwbyrne",
+  "license": "MIT"
+}
