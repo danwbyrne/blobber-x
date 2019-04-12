@@ -1,0 +1,13 @@
+{
+  "name": "blob-engine-client",
+  "version": "0.0.1",
+  "description": "B L O B B E R X - C L I E N T",
+  "main": "src/index.ts",
+  "repository": "github.com/danwbyrne/blobber-x.git",
+  "author": "github.com/danwbyrne",
+  "license": "MIT",
+
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  }
+}

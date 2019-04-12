@@ -1,0 +1,19 @@
+{
+  "name": "blob-engine-website",
+  "version": "0.0.1",
+  "description": "B L O B B E R X - W E B S I T E",
+  "main": "src/index.tsx",
+  "repository": "github.com/danwbyrne/blobber-x.git",
+  "author": "github.com/danwbyrne",
+  "license": "MIT",
+
+  "dependencies": {
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "4.1.14",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-hot-loader": "4.8.0",
+    "styled-components": "4.2.0"
+  }
+}

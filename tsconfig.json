@@ -8,6 +8,14 @@
       "esnext",
       "dom"
     ],
+    "paths": {
+      "@blobber-x/types": [
+        "./blobber-x-types/"
+      ],
+      "@blobber-x/*": [
+        "./blobber-x-*/src"
+      ]
+    },
     "pretty": true,
     "noEmit": true,
     "declaration": false,

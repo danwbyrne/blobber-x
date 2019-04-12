@@ -1,16 +1,20 @@
 {
-  "name": "blobber-x",
-  "version": "0.0.1",
-  "description": "B L O B B E R X",
-  "main": "src/index.ts",
+  "name": "blob-engine",
+  "version": "0.0.0",
+  "description": "B L O B - E N G I N E",
   "repository": "github.com/danwbyrne/blobber-x.git",
   "author": "github.com/danwbyrne",
   "license": "MIT",
+
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+
+
   "devDependencies": {
     "@types/jest": "24.0.11",
     "@types/node": "^11.13.0",
-    "@types/react": "16.8.10",
-    "@types/styled-components": "4.1.12",
     "@types/webpack": "4.4.26",
     "concurrently": "4.1.0",
     "cross-env": "5.2.0",
@@ -18,11 +22,6 @@
     "jest": "24.5.0",
     "lerna": "^3.13.2",
     "prettier": "1.16.4",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-hot-loader": "4.8.0",
-    "react-static": "6.3.6",
-    "styled-components": "4.2.0",
     "tslint": "5.15.0",
     "tslint-clean-code": "0.2.9",
     "tslint-config-prettier": "1.18.0",
@@ -33,9 +32,10 @@
     "typescript": "3.3.1",
     "webpack": "4.29.6"
   },
+
   "scripts": {
     "tsc": "cross-env NODE_OPTIONS=\"--max-old-space-size=3072\" tsc",
     "lint-files": "tslint --project . --format codeFrame",
-    "lint": "yarn run lint-files './src/**/*.{ts,tsx}'"
+    "lint": "yarn run lint-files './packages/*/src/**/*.{ts,tsx}'"
   }
 }
